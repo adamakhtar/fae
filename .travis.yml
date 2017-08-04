@@ -21,8 +21,6 @@ before_script:
   - 'bundle exec rake db:schema:load'
   - 'cd ../../'
   - 'export DISPLAY=:99.0'
-  - 'sh -e /etc/init.d/xvfb start'
-  - 'sleep 3'
 
 script: 'xvfb-run rspec'
 
