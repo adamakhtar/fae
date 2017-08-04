@@ -25,6 +25,7 @@ require 'rspec/core/rake_task'
 desc "Run all specs in spec directory (excluding plugin specs)"
 RSpec::Core::RakeTask.new(:spec => 'app:db:test:prepare')
 
+require 'rake/testtask.rb'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.libs << 'test'
