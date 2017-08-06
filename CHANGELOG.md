@@ -3,9 +3,22 @@
 ## Unreleased
 
 - enhancements
-    + Update dynamic relationships docs for pages and split out to make easier to find.
+    + Add support for HTML wysiwyg editor with images upload
+    + \#66263 Nested table H3s have been promoted to H2s to increase their visiblity on long detail pages
+- bugs
+
+## 1.6
+
+- enhancements
+- bugs
+
+## 1.5.1
+
+- enhancements
+    + Update dynamic relationships docs for pages and split out to make easier to find
     + Resolve Rails 5 depreciation warnings [#167](https://github.com/wearefine/fae/issues/167)
     + Support `config.action_controller.include_all_helpers = false` [#227](https://github.com/wearefine/fae/issues/227)
+    + Should not singularize page class name [#210](https://github.com/wearefine/fae/pulls/210)
 - bugs
 
 ## 1.5
@@ -19,6 +32,7 @@
     + \#61840: Document markdown overriding process
     + \#64653: Refresh sidebar navigation styles
     + \#57081: Change relevant instances of .humanize to .titleize
+    + \#64649: Change handling of saved filter state to allow deep links to override saved cookie filter settings on load, but not overwrite them in the cookie.
     + \#60891: Add generator support for :image and :file attachments
     + \#60892: Add Fae::BaseModelConcern class methods has_fae_image and has_fae_file for shorthand image/file attachment definitions
     + \#64645: Restore display of left navigation on form pages
